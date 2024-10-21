@@ -6,7 +6,7 @@ test('has title', async ({ page }) => {
 });
 
 test('Watch account @smoke', async ({ page }) => {
-  await page.goto('.');
+  await page.goto('https://portfolio.metamask.io/');
   await page.getByRole('button', { name: 'Manage in Settings' }).click();
   await page.getByRole('link', { name: 'Overview' }).click();
   await page.getByPlaceholder('Wallet address or ENS name').fill('vitalik.eth');
