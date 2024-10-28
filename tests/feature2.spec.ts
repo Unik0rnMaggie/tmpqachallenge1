@@ -5,7 +5,7 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/);
 });
 
-const statuses = ['available', 'reserved', 'sold'];
+const statuses = ['available', 'pending', 'sold'];
 
 for (const status of statuses) {
   test(`check API is working for status: ${status} @feature2`, async () => {
